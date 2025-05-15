@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vairavel's To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Add this for logo in browser tab -->
+    <link rel="icon" href="logo.png" type="image/png">
+</head>
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <h2>
+                <img src="logo.png" alt="Vairavel's Logo" class="logo">
+                Vairavel's To-Do List
+            </h2>
+            <!-- Rest of your HTML remains the same -->
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Add your task..." autofocus>
+                <button onclick="addTask()">Add</button>
+            </div>
+            <ul id="list-container">
+                <!-- Task items will appear here -->
+            </ul>
+            <div class="task-stats">
+                <span id="task-count">0 tasks</span>
+                <button id="clear-all" onclick="clearCompleted()">Clear Completed</button>
+            </div>
+        </div>
+    </div>
+    <div class="creator-info">
+    <div class="creator-photo-container">
+        <img src="profile.jpg" alt="Creator Photo" class="creator-photo">
+    </div>
+    <div class="creator-details">
+        <span>A. Vairavel</span>
+        <span>CSE - Bioinformatics</span>
+        <span>VIT, Vellore</span>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
